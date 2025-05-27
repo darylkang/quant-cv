@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quant-cv"
+dynamic = ["version"]
+dependencies = [
+    "numpy",
+    "pandas",
+    "yfinance"
+]
+requires-python = ">=3.10"
+authors = [
+    {name = "Daryl Kang", email = "darylkang@live.com"}
+]
+description = "Alpha, engineered by AI."
+readme = "README.md"
+
+[project.urls]
+homepage = "https://quant.cv"
+source = "https://github.com/darylkang/quant-cv"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = {attr = "alpha.__version__"}
