@@ -1,1 +1,29 @@
-site_name: My Docs
+site_name: Quant Alpha
+site_url: https://quant.cv
+site_author: Daryl Kang
+site_description: Alpha, engineered by AI.
+
+repo_name: darylkang/quant-cv
+repo_url: https://github.com/darylkang/quant-cv
+
+copyright: © 2025 Daryl Kang. All rights reserved.
+
+nav:
+  - Home: index.md
+  - Chat: https://chat.quant.cv
+  - About: about.md
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: material/finance
+  palette:
+    scheme: default
+    primary: black
+    accent: red
