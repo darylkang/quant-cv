@@ -29,4 +29,7 @@ theme:
     accent: red
 
 extra:
+  analytics:
+    provider: google
+    property: !ENV GA_MEASUREMENT_ID
   generator: false
